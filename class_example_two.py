@@ -20,5 +20,5 @@ class Dog ():
         return f'the dog is {self.color} color, him size {self.size} and he has {self.legs} legs, he has a {self.validation_tail(self.tail)} tail'
 
 if __name__ == "__main__":
-    dog = Dog('black','large')
+    dog = Dog('brown','small')
     print(dog)
