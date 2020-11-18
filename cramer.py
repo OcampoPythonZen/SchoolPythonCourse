@@ -1,3 +1,5 @@
+import logging
+
 class CramerMethod(object):
 
     def filter_system_expresion(self, system='') -> list:
@@ -7,7 +9,7 @@ class CramerMethod(object):
                 e = int(e)
                 sub_matrix.append(e)
             except ValueError as e:
-                print(f'Error: {e}')
+                logging.info('Error: {}'.format(e))
         return sub_matrix
 
     def representation_complete_matrix(self,
@@ -22,8 +24,11 @@ class CramerMethod(object):
 
 
 if __name__ == "__main__":
+    logging.basicConfig(
+        format='Date-time: %(asctime)s : Line No. : %(lineno)d - %(message)s', level=logging.DEBUG)
     co = CramerMethod()
     x = co.filter_system_expresion('3X+2Y+1Z')
     y = co.filter_system_expresion('2x+0y+1z')
     z = co.filter_system_expresion('-1x+1y+2z')
-    print(co.representation_complete_matrix(x, y, z))
+    logging.info('Complete Systems Matrix: {}'.format(
+        co.representation_complete_matrix(x, y, z)))
