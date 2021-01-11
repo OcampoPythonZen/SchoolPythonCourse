@@ -1,0 +1,28 @@
+{
+    "user_id": 22800270,
+    "data": {
+        "transaction": {
+            "reference": "984750083",
+            "created_at": "2020-10-06T14:34:18.734Z",
+            "charge_id": "BILL_PAYMENT_727b57d7-2d7e-4a3e-b60e-e56f3b5de2f4",
+            "amount": 111.75,
+            "operation_id": "727b57d7-2d7e-4a3e-b60e-e56f3b5de2f4",
+            "response": {
+                "is_successful": true,
+                "message": "Success",
+                "error_code": ""
+            }
+        },
+        "user_id": 7132460391,
+        "service": {
+            "category": "Telefonía",
+            "provider_sku": "03",
+            "supports_partial_payments": false,
+            "provider_name": "Interbank",
+            "id": 648,
+            "name": "Móviles"
+        }
+    },
+    "process": "BILL_PAYMENT",
+    "traceability_id": "6d3533cc-8003-41ed-b797-a801be53b795"
+}

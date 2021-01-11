@@ -5,6 +5,43 @@ Fecha 17-11-20
 '''
 
 
+def cualquiera():
+    return f'This is a function into class_example has cualquiera name'
+
+
+class Rabbit():
+
+    def compare(self, parametro):
+        if parametro == 'parametro':
+            return parametro
+
+    _color = None
+    _nombre = None
+    _camada = range(5, 8)
+    _patas = 4
+    _ojos = 2
+    _orejas = 2
+    _esta_lleno = False
+    _roe = False
+    _esta_saltando = 'No esta saltanfo el conejo, esta sobre sus 4 patas'
+
+    def __init__(self, color, nombre):
+        self._color = color
+        self._nombre = nombre
+
+    def salta(self):
+        self._esta_saltando = 'Ahora tu conejo ha dado un salto'
+
+    def comer(self):
+        self._esta_saltando = True
+
+    def roe(self):
+        self._roe = True
+
+    def __str__(self):
+        return f'Tienes un hermoso conejo de nombre {self._nombre}, tiene un color {self._color} el cual tiene {self._patas} y {self._ojos} ojos y {self._orejas} hermosas orejas'
+
+
 class Car():
     '''
     Example of Car Class.
@@ -55,20 +92,5 @@ class Car():
         return f'Tu auto ahora se encuentra apagado, la marcha esta en {self._en_marcha}'
 
     def info_auto(self):
-        print(f'Tu auto es de color {self._color}, tiene {self._numero_llantas} llantas y su transmision es {self._transmision} y cuenta con {self._num_puertas} puertas')
-
-
-if __name__ == "__main__":
-    # Instanciacion de una clase o utilizacion de mi clase
-    sabina_car = Car('Rojo', 4, 4, 'automatica')
-    # Para accesar a las funciones de la clase uso el objeto o variable creada
-    # depues de un punto y el nombre de la funcion
-    sabina_car.info_auto()
-    print(sabina_car.arrancar())
-    print(sabina_car.apagar_marcha())
-    ################################
-    print('############################################')
-    isao_car = Car('Cyan', 4, 5, 'Automatico')
-    isao_car.info_auto()
-    print(isao_car.arrancar())
-    print(isao_car.apagar_marcha())
+        print(
+            f'Tu auto es de color {self._color}, tiene {self._numero_llantas} llantas y su transmision es {self._transmision} y cuenta con {self._num_puertas} puertas')

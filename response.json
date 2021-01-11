@@ -1,0 +1,109 @@
+{
+    "email": "guillermo.colombo@rappi.com",
+    "email_status": [
+        {
+            "user": "12348",
+            "email_status": "VERIFIED"
+        },
+        {
+            "user": "12348",
+            "email_status": "BOUNCED"
+        },
+        {
+            "user": "12348",
+            "email_status": "BOUNCED"
+        },
+        {
+            "user": "12348",
+            "email_status": "BOUNCED"
+        },
+        {
+            "user": "12348",
+            "email_status": "BOUNCED"
+        },
+        {
+            "user": "12348",
+            "email_status": "BOUNCED"
+        },
+        {
+            "user": "12348",
+            "email_status": "BOUNCED"
+        },
+        {
+            "user": "12348",
+            "email_status": "BOUNCED"
+        },
+        {
+            "user": "12348",
+            "email_status": "BOUNCED"
+        },
+        {
+            "user": "12348",
+            "email_status": "BOUNCED"
+        },
+        {
+            "user": "12348",
+            "email_status": "BOUNCED"
+        },
+        {
+            "user": "12348",
+            "email_status": "BOUNCED"
+        },
+        {
+            "user": "12348",
+            "email_status": "BOUNCED"
+        },
+        {
+            "user": "12348",
+            "email_status": "VERIFIED"
+        },
+        {
+            "user": "12359",
+            "email_status": "DENIED"
+        },
+        {
+            "user": "12360",
+            "email_status": "VERIFIED"
+        },
+        {
+            "user": "12348",
+            "email_status": "BOUNCED"
+        },
+        {
+            "user": "12348",
+            "email_status": "BOUNCED"
+        },
+        {
+            "user": "12348",
+            "email_status": "BOUNCED"
+        },
+        {
+            "user": "12393",
+            "email_status": "BOUNCED"
+        },
+        {
+            "user": "12399",
+            "email_status": "SENT"
+        }
+    ]
+}
+
+
+{
+    "user_id": "777777",
+    "data": {
+      "first_name": "ana",
+      "last_name": "reyes",
+      "born_date": "29011991"
+    },
+    "process": "CREATE_USER",
+    "traceability_id": "c5816146-5034-406e-95c2-b02f4247d063",
+    "provider": "notolytix"
+  }
+
+  {
+    "risk": "LOOKS_OK",
+    "remedy": null,
+    "tags": null,
+    "fraud_communication_code": null
+  }

@@ -1,0 +1,56 @@
+{
+    "user_id": 181000007152,
+    "data": {
+        "user_id": 181000007152,
+        "user_type": "RAPPI_USER",
+        "amount": 49,
+        "currency_code": "MXN",
+        "user_email": "sebastian.florez@rappi.com",
+        "transaction_status": "PENDING",
+        "transaction_type": "WITHDRAWAL",
+        "payment_method": "digital_wallet",
+        "payment_method_id": "1178",
+        "app": {
+            "os": null,
+            "os_version": null,
+            "device_manufacturer": null,
+            "device_model": null,
+            "device_unique_id": null,
+            "app_name": "Rappi",
+            "app_version": null
+        },
+        "transfer_recipient_user_id": null,
+        "user_recipient_type": null,
+        "transfer_recipient_user_email": null,
+        "rpp_origin_transaction": "WITHDRAWAL_OTP",
+        "account_age_rappi_pay": 278.982349537037,
+        "account_balance": 0,
+        "ip_address": "201.141.62.145",
+        "operation_created_at": "2020-11-27T00:03:46.559Z",
+        "operation_updated_at": "2020-11-27T00:03:46.559Z",
+        "account_created_at_rappi_pay": "2020-02-22T00:29:11.000Z",
+        "user_payer": {
+            "user_id": 181000007152,
+            "user_type": "RAPPI_USER",
+            "user_email": "yzpruebas102@gmail.com",
+            "account_created_at_rappi_pay": "2020-02-22T00:29:11.000Z",
+            "status_integration": "RPP",
+            "model_name": null
+        },
+        "user_receiver": {
+            "user_id": 181000007152,
+            "user_type": "RAPPI_USER",
+            "user_email": "lmafia@bin.com",
+            "account_created_at_rappi_pay": "2020-02-22T00:29:11.000Z",
+            "status_integration": "RPP",
+            "model_name": null
+        },
+        "lat": 119.4526864,
+        "lng": -99.1413684,
+        "needs_deposit": "false",
+        "traceability_id": "8bd35e1b-661e-4204-90fa-db5ffe58a5e3",
+        "transaction_model": "WITHDRAWAL"
+    },
+    "process": "CASH_IN",
+    "traceabilityId": "8bd35e1b-661e-4204-90fa-db5ffe58a5e3"
+}

@@ -3,6 +3,7 @@ import math
 
 def test_my_cart():
     # I will test with a list
+    # print is a function to show in monitor or console something
     my_market_list = []
     new_product = input('Add a new product in your list:')
     my_market_list.append(new_product)
