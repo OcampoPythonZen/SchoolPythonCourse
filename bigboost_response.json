@@ -1,0 +1,77 @@
+{
+    "Result": [
+        {
+            "MatchKeys": "doc{14351443847}",
+            "ElectionCandidateData": {
+                "HasRunForOffice": true,
+                "HasBeenElected": true,
+                "NumberOfTimesRanForOffice": 1,
+                "NumberOfTimesElected": 1,
+                "LastElectedRole": "Vereador",
+                "FirstElectionYearRanForOffice": "2008",
+                "LastElectionYearRanForOffice": "2008",
+                "FirstElectionYearElected": "2008",
+                "LastElectionYearElected": "2008",
+                "ElectionData": [
+                    {
+                        "BallotName": "MÁRCIO",
+                        "BallotNumber": 31555,
+                        "FullName": "MÁRCIO DE OLIVEIRA",
+                        "NormalizedName": "MARCIO DE OLIVEIRA",
+                        "DocNumber": "14351443847",
+                        "VoterNumber": "067733040620",
+                        "Url": "http://divulgacandcontas.tse.jus.br/divulga/rest/v1/candidatura/buscar/2008/64017/14422/candidato/26262",
+                        "ElectionYear": "2008",
+                        "ElectionType": "Municipal",
+                        "ApplicationRole": "Vereador",
+                        "ApplicationPlace": "EMBU DAS ARTES",
+                        "ApplicationUf": "SP",
+                        "Status": "Não eleito",
+                        "WasElected": true,
+                        "CandidateSituation": "APTO",
+                        "ApplicationSituation": "Deferido",
+                        "ImgUrl": "http://divulgacandcontas.tse.jus.br/candidaturas/oficial/2008/SP/64017/14422/26262/foto.png",
+                        "Emails": [],
+                        "Sites": [],
+                        "Gender": "MASC.",
+                        "MaritalStatus": "Solteiro(a)",
+                        "ColorRace": "**",
+                        "InstructionLevel": "Ensino Médio completo",
+                        "Occupation": "Enfermeiro",
+                        "BirthDate": "1973-03-10T03:00:00Z",
+                        "Nationality": "Brasileira nata",
+                        "BirthUF": "SÃO PAULO",
+                        "CoalitionName": "PTC E PRB",
+                        "CoalitionComposition": "**",
+                        "PartyNumber": 31,
+                        "PartyAcronym": "PHS",
+                        "PartyName": "Partido Humanista da Solidariedade",
+                        "RegisterProcessNumber": "234/2008",
+                        "CampaignSpentValue": 0,
+                        "CampaignSpendingFirstShift": 0,
+                        "CampaignSpendingSecondShift": 0,
+                        "TotalAssetsValue": 0,
+                        "AssetsList": [],
+                        "VicesList": [],
+                        "Accountability": {
+                            "AccountabilityLastUpdateDate": "0001-01-01T00:00:00"
+                        },
+                        "FirstCaptureDate": "0001-01-01T00:00:00",
+                        "LastCaptureDate": "0001-01-01T00:00:00",
+                        "LastUpdateDate": "0001-01-01T00:00:00"
+                    }
+                ]
+            }
+        }
+    ],
+    "QueryId": "65bbd137-1b94-43e0-bb35-ef4f32fb38f2",
+    "ElapsedMilliseconds": 147,
+    "Status": {
+        "election_candidate_data": [
+            {
+                "Code": 0,
+                "Message": "OK"
+            }
+        ]
+    }
+}
