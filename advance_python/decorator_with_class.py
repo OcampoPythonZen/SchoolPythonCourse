@@ -8,10 +8,10 @@ def decorador(fun):
 
 def add_another_var(fun):
     def add(self, a, b):
-        # logica
-        another_value = int(input('Cual es el valor que vas a agregar a la operacion?: '))
-        final_result = a+ b + another_value
-        return final_result
+        another_value = int(
+            input('Cual seria el otro numero a sumar que necesita? '))
+        final_resul = a + b + another_value
+        return final_resul
         fun(self, a, b)
     return add
 
@@ -37,13 +37,25 @@ class Gato(Animal):
             f'Soy la clase {self.__class__.__name__}. mensaje 1: {mensaje} y mensaje2: {mensaje2}')
 
 
+# Agregar la clase que contiene nuestras operaciones a afectar con nuestros decoradores
+# Colocar dentro de los parametros de la clase "object" que significa que no heredara de otras clases
+# siendo esta la clase base de nuestro ejemplo.
 class OperacionesBasicas(object):
+
     @add_another_var
     def suma(self, a: int, b: int) -> int:
+        '''
+        Funcion suma que va a hacer afectada por un decorador que cree dentro de mi archivo
+        contiene dos parametros para poder realizar la suma de esos dos parametros
+        '''
         result = a+b
         return result
 
     def resta(self, a: int, b: int) -> int:
+        '''
+        Funcion resta que va a hacer afectada por un decorador que cree dentro de mi archivo
+        contiene dos parametros para poder realizar la resta de esos dos parametros
+        '''
         result = a-b
         return result
 
@@ -55,4 +67,4 @@ if __name__ == '__main__':
     #cat = Gato()
     #cat.saluda('Miauu tengo hambre...', 'bueno adios...')
     calc = OperacionesBasicas()
-    print(calc.suma(6, 6))
+    print('La suma total con el tercer operador de mi decorador es: ', calc.suma(3, 3))
