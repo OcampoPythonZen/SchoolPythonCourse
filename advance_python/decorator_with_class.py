@@ -51,12 +51,13 @@ class OperacionesBasicas(object):
         result = a+b
         return result
 
-    def resta(self, a: int, b: int) -> int:
+    # @add_another_var
+    def resta(self, a: int, b: int, c: int) -> int:
         '''
         Funcion resta que va a hacer afectada por un decorador que cree dentro de mi archivo
         contiene dos parametros para poder realizar la resta de esos dos parametros
         '''
-        result = a-b
+        result = (a-b)-c
         return result
 
 
@@ -68,3 +69,5 @@ if __name__ == '__main__':
     #cat.saluda('Miauu tengo hambre...', 'bueno adios...')
     calc = OperacionesBasicas()
     print('La suma total con el tercer operador de mi decorador es: ', calc.suma(3, 3))
+    print('La resta total con el tercer operador de mi decorador es: ',
+          calc.resta(3, 3, 3))
