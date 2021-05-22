@@ -25,6 +25,7 @@ Edgar       Ocampo          34      IA Introduccion         60                  
 Edgar       Ocampo          34      Tensorflow              100                 True
 '''
 
+from statistics import mean
 edgar_info_inicial = {
     "nombre": "Edgar",
     "apellido": "Ocampo",
@@ -32,7 +33,7 @@ edgar_info_inicial = {
     "materias": [
         {
             "nombre_materia": "Redes neuronales",
-            "calificacion" : 80.0
+            "calificacion": 80.0
         },
         {
             "nombre_materia": "IA Introduccion",
@@ -53,8 +54,8 @@ edgar_info_resultado = {
     "materias": [
         {
             "nombre_materia": "Redes neuronales",
-            "calificacion" : 80.0,
-            "aprobado" : True
+            "calificacion": 80.0,
+            "aprobado": True
         },
         {
             "nombre_materia": "IA Introduccion",
@@ -64,11 +65,52 @@ edgar_info_resultado = {
         {
             "nombre_materia": "Tensorflow",
             "calificacion": 100.0,
-            "aprobado" : True
+            "aprobado": True
         }
     ],
-    "numero_materias" : 3,
+    "numero_materias": 3,
     "promedio_general": 80.0
 }
 
-print(edgar_info_resultado)
+
+class Academy(object):
+
+    def get_information(self) -> dict:
+        personal_info = {} 
+        subject_context = {} 
+        subjects = []
+        name = input('Whats your name? ')
+        personal_info['name'] = name.capitalize()
+        last_name = input('Whats your last name? ')
+        personal_info['last_name'] = last_name.capitalize()
+        age = int(input('What old are you? '))
+        personal_info['age'] = age
+        len_subjects = int(
+            input('How many subjects would add into register? '))
+        for subject in range(len_subjects):
+            subject_to_add = input('What is the name of the subject? ')
+            subject_context['subject_name'] = subject_to_add.title()
+            rate_to_add = float(input('What is the rate of this subject? '))
+            subject_context['rate'] = rate_to_add
+            subject_context['approved'] = False if subject_context.get('rate') >= 70 and subject_context.get('rate') <=100 else False
+            subjects.append(subject_context)
+        personal_info['subjects'] = subjects
+        personal_info['subjects_number']= len(subject_context.get('subjects'))
+        personal_info['mean'] = mean()
+        return personal_info
+
+    def __str__(self) -> str:
+        return f'{self.nombre.capitalize()} estos son tus materias que agregaste. {self.materias}'
+
+
+if __name__ == '__main__':
+    academy = Academy()
+    print(academy.get_information())
+
+
+'''
+{1} =  Alumno, se dea agregar mas informacion o borrarla
+{} = Como inserto o hago la logica para tener todos los datos de los alumnos y
+representar la informacion general como resumen a la escuela o directora.. 
+
+'''
