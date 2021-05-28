@@ -47,60 +47,68 @@ edgar_info_inicial = {
 }
 
 
-edgar_info_resultado = {
-    "nombre": "Edgar",
-    "apellido": "Ocampo",
-    "edad": 34,
-    "materias": [
+personal_info_test = {
+    "first_name": "Edgar",
+    "last_name": "Ocampo",
+    "age": 34,
+    "subjects": [
         {
-            "nombre_materia": "Redes neuronales",
-            "calificacion": 80.0,
-            "aprobado": True
+            "subject_name": "Redes neuronales",
+            "rate": 80.0,
+            "approved": True,
+            "excelent": "improve yourself, you can"
         },
         {
-            "nombre_materia": "IA Introduccion",
-            "calificacion": 60.0,
-            "aprobado": False
+            "subject_name": "IA Introduccion",
+            "rate": 60.0,
+            "approved": False,
+            "excelent": "improve yourself, you can"
         },
         {
-            "nombre_materia": "Tensorflow",
-            "calificacion": 100.0,
-            "aprobado": True
+            "subject_name": "Tensorflow",
+            "rate": 100.0,
+            "approved": True,
+            "excelent": "EXCELENT"
         }
     ],
-    "numero_materias": 3,
-    "promedio_general": 80.0
+    "subjects_number": 3,
+    "subjects_mean": 80.0
 }
 
 
 class Academy(object):
 
-    def get_information(self) -> dict:
-        personal_info = {} 
-        subject_context = {} 
-        subjects = []
-        name = input('Whats your name? ')
-        personal_info['name'] = name.capitalize()
-        last_name = input('Whats your last name? ')
-        personal_info['last_name'] = last_name.capitalize()
-        age = int(input('What old are you? '))
-        personal_info['age'] = age
-        len_subjects = int(
-            input('How many subjects would add into register? '))
-        for subject in range(len_subjects):
-            subject_to_add = input('What is the name of the subject? ')
-            subject_context['subject_name'] = subject_to_add.title()
-            rate_to_add = float(input('What is the rate of this subject? '))
-            subject_context['rate'] = rate_to_add
-            subject_context['approved'] = False if subject_context.get('rate') >= 70 and subject_context.get('rate') <=100 else False
-            subjects.append(subject_context)
-        personal_info['subjects'] = subjects
-        personal_info['subjects_number']= len(subject_context.get('subjects'))
-        personal_info['mean'] = mean()
-        return personal_info
+    personal_info = {}
+    subject_context = {}
+    subjects = []
 
-    def __str__(self) -> str:
-        return f'{self.nombre.capitalize()} estos son tus materias que agregaste. {self.materias}'
+    def get_information(self) -> dict:
+        name = input('Whats your name? ')
+        self.personal_info['name'] = name.capitalize()
+        last_name = input('Whats your last name? ')
+        self.personal_info['last_name'] = last_name.capitalize()
+        age = int(input('What old are you? '))
+        self.personal_info['age'] = age
+        len_subjects = int(
+            input('How many subjects would you add into the register? '))
+        for sub in range(len_subjects):
+            print(f'Position: {sub} and values: {self.subjects}')
+            subject_to_add = input('What is the name of the subject? ')
+            self.subject_context['subject_name'] = subject_to_add.title()
+            rate_to_add = float(input('What is the rate of this subject? '))
+            self.subject_context['rate'] = rate_to_add
+            self.subject_context['approved'] = True if self.subject_context.get(
+                'rate') >= 70 and self.subject_context.get('rate') <= 100 else False
+            self.subject_context['excelent'] = 'excelent' if self.subject_context.get(
+                'rate') >= 100 else 'impprove yourself, you can.'
+            self.subjects.append(self.subject_context.copy())
+        self.personal_info['subjects'] = self.subjects
+        self.personal_info['subjects_number'] = len(self.subjects)
+        rates = []
+        for sub in self.subjects:
+            rates.append(sub['rate'])
+        self.personal_info['mean'] = (rates)
+        return self.personal_info
 
 
 if __name__ == '__main__':
