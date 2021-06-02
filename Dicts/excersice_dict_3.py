@@ -104,13 +104,8 @@ class Academy(object):
             self.subjects.append(self.subject_context.copy())
         self.personal_info['subjects'] = self.subjects
         self.personal_info['subjects_number'] = len(self.subjects)
-        rates = []
-
-        rates_2 = [sub['rate'] for sub in self.subjects]
-        print('for inline: ', rates_2)
-        for sub in self.subjects:
-            rates.append(sub.get('rate'))
-        self.personal_info['mean'] = mean(rates)
+        self.personal_info['mean'] = mean(
+            [sub['rate'] for sub in self.subjects])
         return self.personal_info
 
 
